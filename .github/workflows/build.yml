@@ -1,0 +1,42 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build Repository
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - run: git config --global user.email "ci@fuchss.org" && git config --global user.name "GitHub CI"
+      
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          ref: "fdroid"
+          path: "fdroid"
+      
+      - name: Init Repository Secrets
+        run: echo $KEYSTORE_FILE | base64 --decode > fdroid/keystore.p12
+        env:
+          KEYSTORE_FILE: ${{ secrets.KEYSTORE_FILE }}
+      
+      - name: Build Element.io
+        run: bash scripts/element.io.sh
+      
+      - name: Check if there are changes
+        uses: UnicornGlobal/has-changes-action@v1.0.11
+        id: changes
+        
+      - run: git add releases && git commit -m "Update from $GITHUB_SHA" && git push origin main
+        if: steps.changes.outputs.changed == 1
+      - run: cd fdroid && git add . && git commit -m "Update from $GITHUB_SHA" && git push origin fdroid
+        if: steps.changes.outputs.changed == 1
