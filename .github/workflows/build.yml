@@ -35,7 +35,7 @@ jobs:
         run: bash scripts/element.io.sh
       
       - name: Check if there are changes
-        uses: UnicornGlobal/has-changes-action@v1.0.11
+        uses: UnicornGlobal/has-changes-action@v1.0.12
         id: changes
         
       - run: git add releases && git commit -m "Update from $GITHUB_SHA" && git push origin main
