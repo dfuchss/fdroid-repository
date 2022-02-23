@@ -1,29 +1,25 @@
 {
   "/etc/issue.net": "Debian GNU/Linux 9",
   "commandLine": [
-    "../fdroidserver/fdroid update"
+    "/usr/local/bin/fdroid update"
   ],
   "fdroiddata": {
-    "commitId": "ad0b599a89ad5584ebfcc60259ccb657c5514360",
+    "commitId": "23c867919a4217bc6b82f210923290fe1b08b7b3",
     "isDirty": true,
     "modifiedFiles": [
       "metadata/im.vector.app.yml",
-      "repo/element-v1.3.12.apk",
+      "repo/element-v1.3.15.apk",
+      "repo/icons/icon.png",
       "repo/index-v1.jar",
       "repo/index-v1.json",
       "repo/index.jar",
+      "repo/index.png",
       "repo/index.xml"
     ],
     "untrackedFiles": [
-      "repo/element-v1.4.0.apk"
+      "repo/element-v1.4.2.apk"
     ]
   },
-  "fdroidserver": {
-    "commitId": "39a25fc1913d0fc552206c20aee5e92580d52499",
-    "isDirty": false,
-    "modifiedFiles": [],
-    "untrackedFiles": []
-  },
-  "startTimestamp": 1644430519000,
+  "startTimestamp": 1645577779000,
   "subcommand": "update"
 }
