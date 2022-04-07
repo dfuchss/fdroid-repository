@@ -4,20 +4,20 @@
     "/usr/local/bin/fdroid update"
   ],
   "fdroiddata": {
-    "commitId": "24ddcef60c6aba6186db5b31d69d119b68c0b686",
+    "commitId": "e9c6da17f23c835420e1b19c1beb7b13ba275976",
     "isDirty": true,
     "modifiedFiles": [
       "metadata/im.vector.app.yml",
-      "repo/element-v1.4.2.apk",
+      "repo/element-v1.4.4.apk",
       "repo/index-v1.jar",
       "repo/index-v1.json",
       "repo/index.jar",
       "repo/index.xml"
     ],
     "untrackedFiles": [
-      "repo/element-v1.4.10.apk"
+      "repo/element-v1.4.11.apk"
     ]
   },
-  "startTimestamp": 1649248227000,
+  "startTimestamp": 1649355444000,
   "subcommand": "update"
 }

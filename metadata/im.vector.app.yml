@@ -2,7 +2,7 @@ AuthorName: 'FoxHome Internal ci@fox.home'
 Categories:
   - Internet
   - Phone & SMS
-CurrentVersionCode: 1649248200
+CurrentVersionCode: 1649355417
 IssueTracker: 'https://github.com/vector-im/element-android/issues'
 Name: Element
 SourceCode: 'https://github.com/vector-im/element-android'
