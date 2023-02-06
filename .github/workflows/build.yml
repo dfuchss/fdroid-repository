@@ -40,5 +40,5 @@ jobs:
         
       - run: git add releases && git commit -m "Update from $GITHUB_SHA" && git push origin main
         if: steps.changes.outputs.changed != 0
-      - run: cd fdroid && git add . && git commit -m "Update from $GITHUB_SHA" && git push origin fdroid
+      - run: cd fdroid && git add . && git commit -m "Update from $GITHUB_SHA" && git checkout --orphan fdroid-stage && git commit -m "Update from $GITHUB_SHA" && git push origin fdroid-stage:fdroid -f
         if: steps.changes.outputs.changed != 0
