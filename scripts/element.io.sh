@@ -36,11 +36,8 @@ if [ -f "$META" ]; then
 else
         echo "Meta Data not present. Please update on your own"
 fi
-# Strage Bug of fdroid docker ..
-mv $DEPLOY/.git $DEPLOY/tmp-git
 
-docker run --rm -u $UID -v $DEPLOY:/repo registry.gitlab.com/fdroid/docker-executable-fdroidserver:master update
-
-mv $DEPLOY/tmp-git $DEPLOY/.git
+sudo apt-get update && sudo apt-get install fdroidserver -y
+fdroid update
 
 echo "Finished Deployment"
