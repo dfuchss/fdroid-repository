@@ -18,7 +18,7 @@ if [[ ! "$LATEST" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
 fi
 
 echo "Downloading Latest Version $LATEST"
-wget -qO "releases/element-$LATEST.apk" https://github.com/vector-im/element-android/releases/download/$LATEST/vector-gplay-rustCrypto-arm64-v8a-release.apk
+wget -qO "releases/element-$LATEST.apk" https://github.com/vector-im/element-android/releases/download/$LATEST/vector-gplay-rustCrypto-arm64-v8a-release-signed.apk
 
 echo "Saving Release for Deployment to $DEPLOY"
 mkdir -p $DEPLOY/repo
