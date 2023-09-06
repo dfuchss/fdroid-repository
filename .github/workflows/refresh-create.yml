@@ -18,8 +18,8 @@ jobs:
       - run: git config --global user.email "ci@fuchss.org" && git config --global user.name "GitHub CI"
       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: "fdroid"
           path: "fdroid"
