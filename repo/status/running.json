@@ -1,0 +1,22 @@
+{
+  "/etc/issue.net": "Ubuntu 22.04.3 LTS",
+  "commandLine": [
+    "/usr/bin/fdroid update"
+  ],
+  "fdroiddata": {
+    "commitId": "1efee4a4dc05db545023ca7fa2e155491afc4b05",
+    "isDirty": true,
+    "modifiedFiles": [
+      "metadata/im.vector.app.yml",
+      "repo/index-v1.jar",
+      "repo/index-v1.json",
+      "repo/index.jar",
+      "repo/index.xml"
+    ],
+    "untrackedFiles": [
+      "repo/element-v1.6.8.apk"
+    ]
+  },
+  "startTimestamp": 1701195933000,
+  "subcommand": "update"
+}

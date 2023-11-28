@@ -1,0 +1,11 @@
+AuthorName: 'FoxHome Internal ci@fox.home'
+Categories:
+  - Internet
+  - Phone & SMS
+CurrentVersionCode: 1701195780
+IssueTracker: 'https://github.com/vector-im/element-android/issues'
+Name: Element
+SourceCode: 'https://github.com/vector-im/element-android'
+Summary: 'Element is both a secure messenger and a productivity team collaboration app that is ideal for group chats while remote working. This chat app uses end-to-end encryption to provide powerful video conferencing, file sharing and voice calls.'
+WebSite: 'https://element.io/'
+
